@@ -4,7 +4,8 @@ import adapter from '@sveltejs/adapter-vercel';
 const config = {
 	kit: {
 		// Using the Vercel adapter so the app can be deployed on Vercel.
-		adapter: adapter()
+		// Explicitly set the runtime to nodejs so Vercel uses a compatible Node version.
+		adapter: adapter({ runtime: 'nodejs' })
 	}
 };
 
