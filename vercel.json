@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "installCommand": "cd my-svelte-app/my-svelte-app && npm ci",
+  "installCommand": "cd my-svelte-app/my-svelte-app && npm ci --engine-strict=false --no-audit --no-fund",
   "buildCommand": "cd my-svelte-app/my-svelte-app && npm run build"
 }
